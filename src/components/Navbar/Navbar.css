@@ -1,0 +1,185 @@
+.navbar{
+    height:40px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 150px 0px;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+}
+.navbar-icons{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end; 
+   gap: 13px;
+   position: absolute;
+   top: 10px;
+   right: 30px;
+}
+.navbar-icons img{
+    width: 20px;
+    cursor: pointer;
+}
+.toggle-icon{
+    display: none;
+}
+.togglenav{
+    display: none;
+}
+
+
+
+/* ///////////mobile responive//////////////// */
+
+@media screen and (max-width:700px) {
+
+    .navbar{
+     display: none;
+    }
+    .navbar-icons{
+     display: none;
+    }
+    .toggle-icon{
+     display: block;
+     height: 50px;
+     background-color: white;
+ 
+    }
+    
+    .toggle-icon.close{
+     display: none;
+    }
+    
+    .toggle-icon .toggle-img{
+     width: 30px;
+     position: absolute;
+     right: 20px;
+     top: 10px;
+    }
+    .togglenav{
+     display: none;
+    }
+    .togglenav.open{
+     display: block;
+     background-image: linear-gradient(to bottom,#f3a0b9,#f5e37f) ;
+     text-decoration: none;
+     display: flex;
+     flex-direction: column;
+     transition: 1s;
+    }
+    
+    .togglenav.open .x-img{
+     position: absolute;
+     right: 20px;
+     top: 10px;
+    }
+    
+     .nav-list{
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+         align-items: center;
+         justify-content: center;
+         margin-top: 50px;
+     }
+     .nav-list a{
+         text-decoration: none;
+         color: white;
+         font-weight: bold;
+         font-size: 22px;
+ 
+     }
+ .toggle-cart{
+     display: flex;
+     gap: 30px;
+     color: white;
+         font-weight: bold;
+         font-size: 22px;
+         margin-bottom: 30px;
+ }
+ .toggle-cart img{
+     width: 30px;
+ }
+    
+ 
+ }
+ 
+ 
+ @media screen and (min-width: 701px) and (max-width: 800px) {
+ 
+     .navbar{
+         display: none;
+        }
+        .navbar-icons{
+         display: none;
+        }
+        .toggle-icon{
+         display: block;
+         height: 50px;
+         background-color: white;
+     
+        }
+        
+        .toggle-icon.close{
+         display: none;
+        }
+        
+        .toggle-icon .toggle-img{
+         width: 30px;
+         position: absolute;
+         right: 20px;
+         top: 10px;
+        }
+        .togglenav{
+         display: none;
+        }
+        .togglenav.open{
+         display: block;
+         background-image: linear-gradient(to bottom,#f3a0b9,#f5e37f) ;
+         text-decoration: none;
+         display: flex;
+         flex-direction: column;
+        }
+        
+        .togglenav.open .x-img{
+         position: absolute;
+         right: 20px;
+         top: 10px;
+        }
+        
+         .nav-list{
+             display: flex;
+             flex-direction: column;
+             gap: 30px;
+             align-items: center;
+             justify-content: center;
+             margin-top: 50px;
+         }
+         .nav-list a{
+             text-decoration: none;
+             color: white;
+             font-weight: bold;
+             font-size: 22px;
+     
+         }
+     .toggle-cart{
+         display: flex;
+         gap: 30px;
+         color: white;
+             font-weight: bold;
+             font-size: 22px;
+             margin-bottom: 30px;
+     }
+     .toggle-cart img{
+         width: 30px;
+     }
+      
+    
+  }

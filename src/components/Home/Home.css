@@ -1,0 +1,98 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.Home{
+    height:calc(100vh - 30px);
+    background-image: linear-gradient(to right,#FB7BA2,#FCE043) ;
+    position: relative;
+}
+.Home img{
+    height: calc(100vh - 120px);
+    width: 100%;
+    object-fit: cover;
+
+}
+.Home-content{
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(241, 84, 92,0.5);
+    padding: 20px 65px 20px 35px;
+    text-align: left;
+    /* width: 450px; */
+    height: fit-content;
+    width: 90%; /* Adjusted width */
+    max-width: 490px; /* Added max-width */
+    box-sizing: border-box; /* Added to include padding in width */
+}
+.Home-content h1{
+    font-size: 40px;  
+    margin: 0px;
+    }
+.Home-content p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ///////////mobile responive//////////////// */
+
+@media screen and (max-width:700px) {
+
+   
+    .Home-content {
+        font-size: 16px; 
+        
+       width: 80%;
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); 
+        max-width: calc(100% - 20px);
+        padding: 15px;
+    }
+
+    .Home-content h1 {
+        font-size: 26px; 
+    }
+
+    .Home-content p {
+        font-size: 14px; 
+    }
+
+    
+
+}
+
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+
+    
+     
+     .Home-content {
+        color: white;
+        position: absolute;
+        top: 150px;
+        left: 70px;
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: rgb(241, 84, 92,0.5);
+        padding: 20px 65px 20px 35px;
+        text-align: left;
+     }
+ 
+     .Home-content h1 {
+         font-size: 26px; 
+     }
+ 
+     .Home-content p {
+         font-size: 14px; 
+     }
+ 
+     
+ 
+ }
